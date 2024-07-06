@@ -1,0 +1,123 @@
+body {
+    background-color: #222831;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #76ABAE;
+    overflow: hidden;
+    margin-bottom: 1%;
+    padding: 10px 0;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    font-size: 1.5vw;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px;
+    color: #eeeeee;
+    text-transform: uppercase;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.container {
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 1px; /* Added gap between left and right sections */
+    margin: 0 20px; /* Adjusted margins for responsiveness */
+}
+
+.left {
+    z-index: 1;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    background-color: beige;
+    border-radius: 10px ;
+    outline:7px solid#222831;
+}
+
+.left img {
+    width: 80%;
+    border-radius: 20%;
+    margin-bottom: 5px;
+}
+
+.left p {
+    font-weight: bold;
+    margin: -5px 0 5px 0px;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.left a {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #222831;
+    background-color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.left a:hover {
+    background-color: #76ABAE;
+}
+.right{
+    padding: 0px;
+    width: 1000px;
+    background-color: rgb(230, 238, 225);
+
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    background-color: #eeeeee;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px 46px;
+    transition: background-color 0.3s;
+    font-size: 20px;
+}
+
+.tab button:hover {
+    background-color: beige;
+}
+
+.tab button.active {
+    background:linear-gradient(#76ABAE,rgb(230, 238, 225),rgb(230, 238, 225));
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 30px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
